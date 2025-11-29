@@ -1,37 +1,86 @@
-# dsa210-football-manager-analysis
-An analysis of the correlation between a football manager's playing career and their managerial success for my courseDSA 210.
-DSA 210 Project Proposal: Can we figure out a players success as a football manager before even they start? An Analysis of How Football Playing Careers Affect Managerial Outcomes 
-Data Frame: Managers that are active during 2025 and managed a club from Europa's top 10 leagues.
+# DSA 210 Project
+# An analysis of the correlation between a football manager's playing career and their managerial success for DSA 210.
 
-Motivation: For people around me, football is more than just a sport; it's a part of our lives and a constant topic of debate. A belief we've always shared is that iconic players we grew up with, like Arda Turan, Atiba Hutchinson, and Alex de Souza, would naturally become great managers to our beloved teams. We assumed their great footballing careers and the impact they had on their clubs would directly translate to success from the start. But is this really the case? This project was born from that simple question. Is there a solid correlation between a successful playing career and a successful managerial one, or is it just an idea fueled by a few exceptions like Zidane? Furthermore, the debate often gets more specific. Many people I know are convinced that a player's position is a key factor, arguing that great midfielders, with their on-field vision, are destined to make better coaches. The purpose of this project is to reject or solidify these opinions. By collecting and analyzing career data, My project aims to figure out whether the data supports these claims and to find an answer to these questions.
+DSA 210 Project Proposal: Can we figure out a players success as a football manager before even they start? This project aims to collect data from both managerial and footballing careers of football coaches.
 
-Data Sources: The data for this project will be collected manually from publicly available online football statistics databases. The core of this project relies on creating a unified dataset that combines a manager's statistics from both their playing and coaching careers.
+Data Frame: Managers that are active during 2024-25 season and managed a club from Europe's top 10 leagues.
 
-Primary Data: Managerial Career Statistics The primary data will focus on the managerial careers of individuals and will be sourced mainly from Sofascore. This platform provides comprehensive and well-structured data on coaching careers. I also will use footystats to make sure. Source: https://www.sofascore.com https://footystats.org
+# Motivation
+For people around me, football is more than just a sport; it's a part of our lives and a constant topic of debate. A belief we've always shared is that iconic players we grew up with, like Arda Turan, Atiba Hutchinson, and Alex de Souza, would naturally become great managers to our beloved teams. We assumed their great footballing careers and the impact they had on their clubs would directly translate to success from the start. But is this really the case? This project was born from that simple question. Is there a solid correlation between a successful playing career and a successful managerial one, or is it just an idea fueled by a few exceptions like Zidane? 
 
-Metrics to Collect: Clubs managed and tenure dates, Career win percentage, Average points-per-game (PPG), Trophies and honors won as a manager, Managerial years Job Stabilty(e.g., How many times did they got sacked) etc.
+Furthermore, the debate often gets more specific. Many people I know are convinced that a player's position is a key factor, arguing that great midfielders, with their on-field vision, are destined to make better coaches. The purpose of this project is to reject or solidify opinions like these. By collecting and analyzing career data, My project aims to figure out whether the data supports these claims and to find an answer to these questions.
 
-Enriching Data: Playing Career Statistics To enrich the managerial data, I will collect the some important playing career statistics for each individual in the dataset. This will allow for a direct analysis of the correlation between playing and coaching success. These stats will be sourced from Transfermarkt, Playmakerstats and Fbref. Sources: https://www.transfermarkt.com, https://www.playmakerstats.com https://fbref.com
+# Data Sources
+The data for this project will be collected from publicly available online football statistics databases. The core of this project relies on creating a unified dataset that combines a manager's statistics from both their playing and coaching careers.
 
-Metrics to Collect: The player's primary and detailed positions (e.g., Midfielder(Number 6), Defender(Right-back)), Total number of official appearances, Career goal conturbutions, Trophies and honors won as a player, The competitive level of the clubs they played for, The League and Clubs that they played for etc.
+Primary Data
+
+Managerial Career Statistics The primary data will focus on the managerial careers of individuals and will be sourced from Sofascore. This platform provides comprehensive and well-structured data on coaching careers. 
+
+Source: https://www.sofascore.com 
+
+Metrics to Collect: Clubs managed, Career win percentage, Average points-per-game (PPG), Number of trophies and honors won as a manager, Managerial years.
+
+Enriching Data
+
+Player Career Statistics To enrich the managerial data, I will collect the some important playing career statistics for each individual in the dataset. This will allow for a direct analysis of the correlation between playing and coaching success. These stats will be sourced from Transfermarkt 
+
+Source: https://www.transfermarkt.com
+
+Metrics to Collect: The player's positions, Total number of official appearances, Career goals, Number of trophies and honors won as a player, The League that they played for the most.
 
 By merging these two datasets, I will create a complete profile for each person, enabling the analysis required to answer the project's core questions.
 
-Data Analysis: Analytical methods will be used to investigate the relationship between a manager's playing career and their coaching success. The analysis is divided into two main stages: exploratory analysis with hypothesis testing, followed by the implementation of machine learning models.
+# Hypothesis and Results
 
-Exploratory Data Analysis and Hypothesis: Testing The initial phase will focus on cleaning the data, exploring it visually, and testing core assumptions.
+# Hypothesis 1: Managers who won trophies as players are more successful managers.
 
-Player-Manager Correlation Analysis: I will create scatter plots and correlation matrices to visualize the relationship between key player metrics (e.g., goals scored, number of appearances, trophies won) and managerial success metrics (e.g., career win percentage, points-per-game). This will provide an initial answer to whether successful players tend to become successful managers.
+Null Hypothesis: There is no correlation between number of throphies won as player and PPG as managers.
 
-Positional Impact Comparison: To investigate the common belief that certain positions produce better managers, I will use box plots to compare the distributions of managerial win percentages across different playing positions (Defenders, Midfielders, Forwards).
+Result: Rejected H0 (p = 0.007, Correlation = +0.20).
 
-Hypothesis Testing: I will conduct a formal hypothesis test to determine if observed differences are statistically significant. For example: Null Hypothesis (H₀): There is no significant difference in the mean career win percentage between managers who played as midfielders and managers who played in other positions.
+Analysis: The data reveals a statistically significant positive link between a player's trophies and their managerial success. This suggests that "winning" is a important skill; players exposed to championship environments internalize the standards required to replicate that success in the sideline. 
 
-Machine Learning Implementation The primary analytical goal is to predict the possibility of a players chance of being succsesfull as a manager based on their career stats using supervised and unsupervised machine learning methods.
+# Hypothesis 2: Players who won trophies will continue to win trophies as managers.
 
-Findings Expected Findings: I expect to find that a midfield with a lot of appearences who did not changed a lot of clubs and played mainly in tactical leagues such as Serie A or La Liga to be a better manager than others. However i dont think career goals and trophies won as a player would affect the managerial sucsess.
+Null Hypothesis: There is no correlation between number of thropies won as player and as manager.
 
-Limitations and Future Work
+Result: Rejected H0 (p < 0.01, Strong Positive Correlation).
 
-Limitations: There is a lot of other factors that affects such as work ethic. This can outshine the data from their player careers which would result in a data analysis that doesnt tell anything. Also comparing 'sucsess' will be hard for teams that does not share a common goal. For example We can't say that a coach which has 1.8 ppg which coaches a big club is better than a manager with 1.5 ppg that manages a relegetion contender. 
-Future Work: The model could be extended to find the coaches that has the highest possibility of sucsess for a given team. This can help the teams which are desprate need of sucsesfull coaches.
+Analysis: This indicates elite clubs hire former winners (Probably former superstars of their history like Zidane for Real Madrid), placing them in a better position to win managerial titles immediately.
+
+# Hypothesis 3: Midfielders perform better as managers than other positions.
+
+Null Hypothesis: There is no correlation between position and managerial success.
+
+Result: Rejected H0 (p = 0.006).
+
+Analysis: Former Midfielders achieved a significantly higher average PPG (1.63) compared to Goalkeepers (1.42), Defenders (1.53) and Forwards (1.52). This supports the theory that the midfield role—which requires highest tactical capacity is the best preparation for coaching.
+
+# Hypothesis 4: Playing in top-tier leagues provides a better managerial foundation.
+
+Null Hypothesis: There is no correlation with the players most played league and their managerial success.
+
+Result:  Rejected H0 (p = 0.011).
+
+Analysis: Managers who spent their playing careers mostly in the Top 5 Leagues (England, Spain, Italy, Germany, France) significantly outperformed those from smaller leagues. This implies that exposure to elite tactical systems and high-pressure environments helps a lot when developing coaching skills.
+
+# Hypothesis 5: More games played as a player leads to a longer, more stable managerial career.
+
+Null Hypothesis: There is no correlation between player appearances and their job stability as managers.
+
+Result : Failed to reject H0 (p = 0.69)
+
+Analysis: Career longevity as a player does not predict job stabilty as a manager. A player with 500 appearances is just as likely to be fired quickly as a player with less appearances, proving that management requires a completely different skillset than playing durability.
+
+# Hypothesis 6: Players who adopted to more clubs makes better managers.
+
+Null Hypothesis: There is no correlation between the number of clubs a player played for and their managerial success
+
+Result: Failed to Reject H0 (p = 0.21).
+
+Analysis: Adaptability as a player does not predict managerial success. The data shows that players who changed clubs more often does not perform better than the players with less. This suggests that the ability to adapt to new clubs as a player is a different skill set than being successfull as a manager.
+
+# Limitations
+
+PPG and Thropies won is not enough for a analysis to figure out if a manager is successfull or not. There are lot of factors within the football that makes it harder to frame a manager as succsessfull or not.
