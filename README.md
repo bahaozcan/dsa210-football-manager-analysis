@@ -1,5 +1,5 @@
 # DSA 210 Project
-# An analysis of the correlation between a football manager's playing career and their managerial success for DSA 210.
+## An analysis of the correlation between a football manager's playing career and their managerial success for DSA 210.
 
 DSA 210 Project Proposal: Can we figure out a players success as a football manager before even they start? This project aims to collect data from both managerial and footballing careers of football coaches.
 
@@ -13,7 +13,7 @@ Furthermore, the debate often gets more specific. Many people I know are convinc
 # Data Sources
 The data for this project will be collected from publicly available online football statistics databases. The core of this project relies on creating a unified dataset that combines a manager's statistics from both their playing and coaching careers.
 
-Primary Data
+## Primary Data
 
 Managerial Career Statistics The primary data will focus on the managerial careers of individuals and will be sourced from Sofascore. This platform provides comprehensive and well-structured data on coaching careers. 
 
@@ -21,19 +21,19 @@ Source: https://www.sofascore.com
 
 Metrics to Collect: Clubs managed, Career win percentage, Average points-per-game (PPG), Number of trophies and honors won as a manager, Managerial years.
 
-Enriching Data
+## Enriching Data
 
 Player Career Statistics To enrich the managerial data, I will collect the some important playing career statistics for each individual in the dataset. This will allow for a direct analysis of the correlation between playing and coaching success. These stats will be sourced from Transfermarkt 
 
 Source: https://www.transfermarkt.com
 
-Metrics to Collect: The player's positions, Total number of official appearances, Career goals, Number of trophies and honors won as a player, The League that they played for the most.
+## Metrics to Collect: The player's positions, Total number of official appearances, Career goals, Number of trophies and honors won as a player, The League that they played for the most.
 
 By merging these two datasets, I will create a complete profile for each person, enabling the analysis required to answer the project's core questions.
 
 # Hypothesis and Results
 
-# Hypothesis 1: Managers who won trophies as players are more successful managers.
+## Hypothesis 1: Managers who won trophies as players are more successful managers.
 
 Null Hypothesis: There is no correlation between number of throphies won as player and PPG as managers.
 
@@ -41,7 +41,7 @@ Result: Rejected H0 (p = 0.007, Correlation = +0.20).
 
 Analysis: The data reveals a statistically significant positive link between a player's trophies and their managerial success. This suggests that "winning" is a important skill; players exposed to championship environments internalize the standards required to replicate that success on the sideline. 
 
-# Hypothesis 2: Players who won trophies will continue to win trophies as managers.
+## Hypothesis 2: Players who won trophies will continue to win trophies as managers.
 
 Null Hypothesis: There is no correlation between number of tropies won as player and as manager.
 
@@ -49,7 +49,7 @@ Result: Rejected H0 (p < 0.01, Strong Positive Correlation).
 
 Analysis: This indicates elite clubs hire former winners (Probably former superstars of their history like Zidane for Real Madrid), placing them in a better position to win managerial titles immediately.
 
-# Hypothesis 3: Midfielders perform better as managers than other positions.
+## Hypothesis 3: Midfielders perform better as managers than other positions.
 
 Null Hypothesis: There is no correlation between position and managerial success.
 
@@ -57,7 +57,7 @@ Result: Rejected H0 (p = 0.006).
 
 Analysis: Former Midfielders achieved a significantly higher average PPG (1.63) compared to Goalkeepers (1.42), Defenders (1.53) and Forwards (1.52). This supports the theory that the midfield role—which requires highest tactical capacity is the best preparation for coaching.
 
-# Hypothesis 4: Playing in top-tier leagues provides a better managerial foundation.
+## Hypothesis 4: Playing in top-tier leagues provides a better managerial foundation.
 
 Null Hypothesis: There is no correlation with the players most played league and their managerial success.
 
@@ -65,7 +65,7 @@ Result:  Rejected H0 (p = 0.011).
 
 Analysis: Managers who spent their playing careers mostly in the Top 5 Leagues (England, Spain, Italy, Germany, France) significantly outperformed those from smaller leagues. This implies that exposure to elite tactical systems and high-pressure environments helps a lot when developing coaching skills.
 
-# Hypothesis 5: More games played as a player leads to a longer, more stable managerial career.
+## Hypothesis 5: More games played as a player leads to a longer, more stable managerial career.
 
 Null Hypothesis: There is no correlation between player appearances and their job stability as managers.
 
@@ -73,7 +73,7 @@ Result : Failed to reject H0 (p = 0.69)
 
 Analysis: Career longevity as a player does not predict job stabilty as a manager. A player with 500 appearances is just as likely to be fired quickly as a player with less appearances, proving that management requires a completely different skillset than playing durability.
 
-# Hypothesis 6: Players who adopted to more clubs makes better managers.
+## Hypothesis 6: Players who adopted to more clubs makes better managers.
 
 Null Hypothesis: There is no correlation between the number of clubs a player played for and their managerial success.
 
