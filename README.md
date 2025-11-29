@@ -27,7 +27,9 @@ Player Career Statistics To enrich the managerial data, I will collect the some 
 
 Source: https://www.transfermarkt.com
 
-## Metrics to Collect: The player's positions, Total number of official appearances, Career goals, Number of trophies and honors won as a player, The League that they played for the most.
+## Metrics to Collect 
+
+The player's positions, Total number of official appearances, Career goals, Number of trophies and honors won as a player, The League that they played for the most.
 
 By merging these two datasets, I will create a complete profile for each person, enabling the analysis required to answer the project's core questions.
 
