@@ -39,11 +39,11 @@ Null Hypothesis: There is no correlation between number of throphies won as play
 
 Result: Rejected H0 (p = 0.007, Correlation = +0.20).
 
-Analysis: The data reveals a statistically significant positive link between a player's trophies and their managerial success. This suggests that "winning" is a important skill; players exposed to championship environments internalize the standards required to replicate that success in the sideline. 
+Analysis: The data reveals a statistically significant positive link between a player's trophies and their managerial success. This suggests that "winning" is a important skill; players exposed to championship environments internalize the standards required to replicate that success on the sideline. 
 
 # Hypothesis 2: Players who won trophies will continue to win trophies as managers.
 
-Null Hypothesis: There is no correlation between number of thropies won as player and as manager.
+Null Hypothesis: There is no correlation between number of tropies won as player and as manager.
 
 Result: Rejected H0 (p < 0.01, Strong Positive Correlation).
 
@@ -75,12 +75,16 @@ Analysis: Career longevity as a player does not predict job stabilty as a manage
 
 # Hypothesis 6: Players who adopted to more clubs makes better managers.
 
-Null Hypothesis: There is no correlation between the number of clubs a player played for and their managerial success
+Null Hypothesis: There is no correlation between the number of clubs a player played for and their managerial success.
 
 Result: Failed to Reject H0 (p = 0.21).
 
-Analysis: Adaptability as a player does not predict managerial success. The data shows that players who changed clubs more often does not perform better than the players with less. This suggests that the ability to adapt to new clubs as a player is a different skill set than being successfull as a manager.
+Analysis: Adaptability as a player does not predict managerial success. The data shows that players who changed clubs more often does not perform better than the players with less. This suggests that the ability to adapt to new clubs as a player is a different skill set than being successful as a manager.
 
 # Limitations
 
-PPG and Thropies won is not enough for a analysis to figure out if a manager is successfull or not. There are lot of factors within the football that makes it harder to frame a manager as succsessfull or not.
+PPG and Thropies won is not enough for a analysis to figure out if a manager is successful or not. There are lot of factors within the football that makes it harder to frame a succsess.
+
+# Future Work
+
+I will implement machine learning methods to build an algorithm that predicts the likelyhood of a sucsess of a player that is yet to become a manager.
