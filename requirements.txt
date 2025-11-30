@@ -1,4 +1,4 @@
 pandas
-scipy.stats
-mathplotlib.pyplot
+scipy
+mathplotlib
 seaborn
