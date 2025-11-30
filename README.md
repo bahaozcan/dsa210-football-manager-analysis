@@ -39,7 +39,7 @@ By merging these two datasets, I will create a complete profile for each person,
 
 Null Hypothesis: There is no correlation between number of throphies won as player and PPG as managers.
 
-Result: Rejected H0 (p = 0.007, Correlation = +0.20).
+Result: Rejected H0 (p = 0.006, Correlation = +0.20).
 
 Analysis: The data reveals a statistically significant positive link between a player's trophies and their managerial success. This suggests that "winning" is a important skill; players exposed to championship environments internalize the standards required to replicate that success on the sideline. 
 
@@ -55,7 +55,7 @@ Analysis: This indicates elite clubs hire former winners (Probably former supers
 
 Null Hypothesis: There is no correlation between position and managerial success.
 
-Result: Rejected H0 (p = 0.006).
+Result: Rejected H0 (p = 0.003).
 
 Analysis: Former Midfielders achieved a significantly higher average PPG (1.63) compared to Goalkeepers (1.42), Defenders (1.53) and Forwards (1.52). This supports the theory that the midfield role—which requires highest tactical capacity is the best preparation for coaching.
 
@@ -63,7 +63,7 @@ Analysis: Former Midfielders achieved a significantly higher average PPG (1.63) 
 
 Null Hypothesis: There is no correlation with the players most played league and their managerial success.
 
-Result:  Rejected H0 (p = 0.011).
+Result:  Rejected H0 (p = 0.05).
 
 Analysis: Managers who spent their playing careers mostly in the Top 5 Leagues (England, Spain, Italy, Germany, France) significantly outperformed those from smaller leagues. This implies that exposure to elite tactical systems and high-pressure environments helps a lot when developing coaching skills.
 
@@ -71,7 +71,7 @@ Analysis: Managers who spent their playing careers mostly in the Top 5 Leagues (
 
 Null Hypothesis: There is no correlation between player appearances and their job stability as managers.
 
-Result : Failed to reject H0 (p = 0.69)
+Result : Failed to reject H0 (p = 0.40)
 
 Analysis: Career longevity as a player does not predict job stabilty as a manager. A player with 500 appearances is just as likely to be fired quickly as a player with less appearances, proving that management requires a completely different skillset than playing durability.
 
@@ -79,7 +79,7 @@ Analysis: Career longevity as a player does not predict job stabilty as a manage
 
 Null Hypothesis: There is no correlation between the number of clubs a player played for and their managerial success.
 
-Result: Failed to Reject H0 (p = 0.21).
+Result: Failed to Reject H0 (p = 0.27).
 
 Analysis: Adaptability as a player does not predict managerial success. The data shows that players who changed clubs more often does not perform better than the players with less. This suggests that the ability to adapt to new clubs as a player is a different skill set than being successful as a manager.
 
