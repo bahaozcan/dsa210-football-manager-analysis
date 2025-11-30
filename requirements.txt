@@ -1,0 +1,4 @@
+pandas
+scipy.stats
+mathplotlib.pyplot
+seaborn
