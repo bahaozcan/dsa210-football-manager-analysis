@@ -88,7 +88,15 @@ Analysis: Adaptability as a player does not predict managerial success. The data
 To move beyond simple correlations, I implemented three distinct machine learning approaches to categorize managers based on their playing history, classify them into "Elite" vs. "Average" tiers, and attempt to predict their exact Points Per Game (PPG).
 
 ## Part 1: Unsupervised Learning (Finding the Archetypes)
-Goal: To identify if there are natural "groupings" or profiles of managers based on their playing careers, without strictly labeling them as successful or not. Method: K-Means Clustering.Features Used: Player Appearances, Trophies Won, Number of Clubs Played For.Result: The algorithm identified 4 distinct clusters:Cluster 0 (Average Players): ~427 Apps, ~3 Trophies. Primarily Midfielders. They are the largest group (53 managers) with a solid average PPG of 1.59.Cluster 1 (The Legends): ~544 Apps, ~16 Trophies. These are the superstars. This group had the highest managerial PPG (1.70), supporting the idea that great players can become great managers. Cluster 2 (The Journeymen): ~304 Apps, ~1.5 Trophies. Often Forwards. This group had the lowest average managerial success (PPG 1.48).Cluster 3 (The Low-Profile Players): ~176 Apps, <1 Trophy. Despite the lack of playing fame, they performed surprisingly well (PPG 1.56), outperforming the Journeymen.
+Goal: To identify if there are natural "groupings" or profiles of managers based on their playing careers, without strictly labeling them as successful or not. Method: K-Means Clustering.Features Used: Player Appearances, Trophies Won, Number of Clubs Played For.Result: The algorithm identified 4 distinct clusters:
+
+Cluster 0 (Average Players): ~427 Apps, ~3 Trophies. Primarily Midfielders. They are the largest group (53 managers) with a solid average PPG of 1.59.
+
+Cluster 1 (The Legends): ~544 Apps, ~16 Trophies. These are the superstars. This group had the highest managerial PPG (1.70), supporting the idea that great players can become great managers. 
+
+Cluster 2 (The Journeymen): ~304 Apps, ~1.5 Trophies. Often Forwards. This group had the lowest average managerial success (PPG 1.48).
+
+Cluster 3 (The Low-Profile Players): ~176 Apps, <1 Trophy. Despite the lack of playing fame, they performed surprisingly well (PPG 1.56), outperforming the Journeymen.
 
 ## Part 2: Supervised Learning (Classification)
 Goal: To build a model that can predict whether a current player will become an "Elite" manager (defined as having a PPG above the median). Method: Decision Tree Classifier. Input Features: Player Apps, Trophies Won, Number of Clubs, and Playing Position. Result: The model achieved a accuracy of 72%.  The alltough the accuracy seems promosing, It does not show us the full picture. The model relies heavily on "Experience" (Apps), but as the Live Demo showed, this creates a major blind spot. 
@@ -100,6 +108,18 @@ Goal: To see if we could predict a manager's exact PPG using a Random Forest Reg
 Goal: To validate the model against real-world examples and active players. I tested 24 specific names. Result: The model achieved 62.5% Accuracy. What we learned from the failures: The model displayed two distinct biases: The "Legend Bias" (False Positives): It incorrectly predicted Wayne Rooney, Steven Gerrard, Andrea Pirlo, and Diego Maradona as ELITE. Why? Because they had massive playing stats (High Apps + High Trophies). The model assumed their playing greatness would translate to management, but in reality, it did not.The "Underdog Blind Spot" (False Negatives): It incorrectly predicted managers like Jorge Jesus as AVERAGE. Why? Because these managers had average or short playing careers (Low Apps). The model penalized them for not being "famous" players, completely missing their tactical genius. Conclusion: The machine learning analysis proves that while "Legendary Players" (Cluster 1) have a slightly higher ceiling, mainly because they have usually manage elite teams. The model cannot identify the "Student of the Game"—the low-profile player who becomes a world-class tactician.
 
 # Limitations and Future Work
+##
 
-PPG and Thropies won is not enough for a analysis to figure out if a manager is successful or not. There are lot of factors within the football that makes it harder to frame a succsess.
+The primary metric for success, Points Per Game (PPG), is mostly dependent on the strength of the club. A manager achieving 1.4 PPG with a relegation-threatened team, might be "Elite," while a manager achieving 1.8 PPG with a top team might be underperforming. Our model treats raw PPG as the absolute truth, which penalizes overachieving managers at smaller clubs.
+##
 
+Football management relies heavily on leadership, tactical innovation, and crisis management—qualities that do not appear in a spreadsheet. The model failed to predict "Tactical Geniuses"  because their genius lies in their brains, not in their playing stats.
+##
+
+The dataset consists of managers currently active in top leagues. It excludes thousands of failed managers, which may skew the results to make it look like "Great Players" succeed more often than they actually do. Because usually most of the elite managers give a chance at coaching, but few stays after some time.
+##
+
+Instead of raw PPG, we should calculate "Performance vs. Expected"—comparing a manager's results against their club's wage bill or squad market value. This would correctly identify managers who outperform their budget.
+##
+
+Including data from the last 30 years (rather than just current managers) would increase the sample size and help the machine learning model find more stable patterns.
