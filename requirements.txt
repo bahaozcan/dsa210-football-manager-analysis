@@ -2,3 +2,4 @@ pandas
 scipy
 mathplotlib
 seaborn
+scikit-learn
