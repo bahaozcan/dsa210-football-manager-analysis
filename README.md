@@ -122,3 +122,16 @@ Instead of raw PPG, we should calculate "Performance vs. Expected"—comparing a
 ##
 
 Including data from the last 30 years (rather than just current managers) would increase the sample size and help the machine learning model find more stable patterns.
+
+# AI Usage 
+This section is written to explain the ai ussage in this project as project guidelines suggested.
+
+Used tool: Gemini 
+
+Use Cases: 
+
+Code Assistance: Ai is used to generate templates for datascience libraries, this templates later editted by me to fit into my project.
+
+General Help: Ai is used to help me guide through the coding part of the project.
+
+Debugging: Ai is used to help me debug the codes.
